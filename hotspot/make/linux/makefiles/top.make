@@ -69,6 +69,7 @@ AD_Files_If_Required = $(AD_Files_If_Required/$(TYPE))
 
 # Wierd argument adjustment for "gnumake -j..."
 adjust-mflags   = $(GENERATED)/adjust-mflags
+
 # **** MODIFIED BY DXT
 #MFLAGS-adjusted = -r `$(adjust-mflags) "$(MFLAGS)" "$(HOTSPOT_BUILD_JOBS)"`
 MFLAGS-adjusted = -r $(MFLAGS) -j4
